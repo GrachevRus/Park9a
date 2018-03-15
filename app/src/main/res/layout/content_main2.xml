@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLabelFree"
+    tools:context="rus.app141217.Main2Activity"
+>
+
+    <LinearLayout
+        android:layout_width="304dp"
+        android:layout_height="493dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TVnm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="НОМЕР МЕСТА"
+                android:textColor="@color/colorLabel" />
+
+            <EditText
+                android:id="@+id/ETnm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorLabel" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TVname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ИМЯ"
+                android:textColor="@color/colorLabel" />
+
+            <EditText
+                android:id="@+id/ETname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorLabel" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TVgender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ПОЛ"
+                android:textColor="@color/colorLabel" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/RBman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="М"
+                    android:textColor="@color/colorLabel" />
+
+                <RadioButton
+                    android:id="@+id/RBfemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ж"
+                    android:textColor="@color/colorLabel" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TVmodel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="МАРКА АВТО"
+                android:textColor="@color/colorLabel" />
+
+            <EditText
+                android:id="@+id/ETmodel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorLabel" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TVnewPas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="НОВЫЙ ПАРОЛЬ"
+                android:textColor="@color/colorLabel" />
+
+            <EditText
+                android:id="@+id/ETnewPas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorLabel" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TVcurPas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ТЕКУЩИЙ ПАРОЛЬ"
+                android:textColor="@color/colorLabel" />
+
+            <EditText
+                android:id="@+id/ETcurPas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorLabel" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ButSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onButSubmit"
+            android:text="ПРИМЕНИТЬ" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
